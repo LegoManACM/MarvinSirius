@@ -27,6 +27,8 @@ def MailForMarvin(email):
     print(">>> Mail received for Marvin!")
     body = email.Body
     lines = body.split("\n")
+
+    print(email.Subject)
     
     encounteredError = False
 
@@ -60,7 +62,7 @@ while True:
     #heart Beat
     if((time.time() - heartBeat) > lastBeat):
         lastBeat = time.time()
-        print("\n>>> Tick")
+        #print("\n>>> Tick")
         
         #check for mail
         newMail = mail.read_emails()
