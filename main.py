@@ -75,6 +75,8 @@ def MailForMarvin(email):
     if(encounteredError == False):
         mail.delete_emails(emailID = email.MailID.decode())
 
+
+
 while True:
     #heart Beat
     if((time.time() - heartBeat) > lastBeat):
